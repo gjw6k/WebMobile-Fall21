@@ -13,3 +13,4 @@ In this ICP, we installed
 3. Created repositories remotely and cloned to local machine. 
 4. Created folders on local Github and remote it.
 5. Create, fork, pull, and sync to remote repository.
+6. Created a new issues and described in pull request.
