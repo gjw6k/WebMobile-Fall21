@@ -6,9 +6,9 @@ In this project, we are introducing how to setup and use Github, Github Desktop,
 
 In this **ICP**, we installed
 
-1. Github Desktop <a href="https://github.com/"></a>.
+1. <a href="https://github.com/">Github Desktop.</a>
 
-2. Webstorm IDE <a href="https://www.jetbrains.com/webstorm/"></a>.
+2. <a href="https://www.jetbrains.com/webstorm/">Webstorm IDE.</a>
 
 3. Created repositories remotely and cloned to the local machine.
 
