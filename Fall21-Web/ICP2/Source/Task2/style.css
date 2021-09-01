@@ -78,7 +78,36 @@ body {
     width: 272px;
     height: 92px;
 }
+.cards {
+    position: relative;
+    top: 20px;
+    width: 450px;
+    margin: 0 auto;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7px;
+    row-gap: 7px;
+}
+
+.card {
+    border: 2px solid #DDD;
+    padding: 18px;
+    border-radius: 8px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    background: #DDD;
+}
+
+.card > img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 55px;
+}
 #search-bar {
     position: relative;
     flex-basis: 100%;
