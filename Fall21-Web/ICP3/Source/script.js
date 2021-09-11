@@ -7,7 +7,7 @@ function reply_click(obj) {
         if (choice1 === choice2) {
             alert("Both matched");
         }
-        if (choice1 === "rock") {
+        else if (choice1 === "rock") {
             if (choice2 === "scissors") {
                 alert("You selected rock and computer selected scissors");
                 alert("You Won");
@@ -16,7 +16,7 @@ function reply_click(obj) {
                 alert("Computer Won");
             }
         }
-        if (choice1 === "paper") {
+        else if (choice1 === "paper") {
             if (choice2 === "rock") {
                 alert("You selected paper and computer selected rock");
                 // paper wins
@@ -27,7 +27,7 @@ function reply_click(obj) {
                 alert("Computer Won");
             }
         }
-        if (choice1 === "scissors") {
+        else if (choice1 === "scissors") {
             if (choice2 === "rock") {
                 alert("You selected scissors and computer selected rock");
                 // rock wins
@@ -39,7 +39,6 @@ function reply_click(obj) {
             }
         }
     }
-//document.write("<p>User Choice:" + " " + userChoice + "</p>");
-//document.write("<p>Computer Choice:" + " " + computerChoice + "</p>");        // displaying values
+
     compare(userChoice, computerChoice);
 }
