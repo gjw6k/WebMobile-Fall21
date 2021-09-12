@@ -1,0 +1,11 @@
+background{
+    color: #CCCCCC;
+}
+.card {
+     display: flex;
+ }
+
+.cards {
+    flex: 33.33%;
+    padding: 5px;
+}
