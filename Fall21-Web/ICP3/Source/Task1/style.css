@@ -1,0 +1,16 @@
+h1 {
+    color:red;
+}
+.card {
+     display: flex;
+
+ }
+
+.cards {
+    flex: 10%;
+
+
+}
+#v {
+    background-color: mintcream;
+}
