@@ -2,11 +2,8 @@ function getGithubInfo(user) {
 
     //1. Create an instance of XMLHttpRequest class and send a GET request using it.
     // The function should finally return the object(it now contains the response!)
-    console.log(user);
-
     const xhttp = new XMLHttpRequest();
     var url = "https://api.github.com/users/"+user;
-
     xhttp.open("GET",url);
     xhttp.onload = function () {
         if (xhttp.status == 200) {
@@ -21,8 +18,6 @@ function getGithubInfo(user) {
 
 function showUser(user) {
     //2. set the contents of the h2 and the two div elements in the div '#profile' with the user content
-    console.log(user);
-    console.log(user.login)
     $("#profile").text(user.username);
    $(".information").html("<label>UserName: </label>"+user.name +
        "<br/><label>Id: </label>"+user.id
