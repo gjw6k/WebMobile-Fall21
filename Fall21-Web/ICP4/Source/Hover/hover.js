@@ -7,7 +7,7 @@ function upDate(previewPic) {
        to the alt text of the preview image
        */
 const imgSrc = previewPic.getAttribute('src');
-const altWord = previewPic.getAttribute("alt")
+const altWord = previewPic.getAttribute("alt");
    document.getElementById("image").style.backgroundImage = "url('"+imgSrc+"')";
 document.getElementById("image").innerHTML = altWord;
 
@@ -24,6 +24,6 @@ function unDo() {
    */
 
    document.getElementById("image").innerHTML = "Hover over an image below to";
-   document.getElementById("image").style.backgroundImage = null;
+   document.getElementById("image").style.backgroundImage = '';
 
 }
