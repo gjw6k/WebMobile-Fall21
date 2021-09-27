@@ -1,0 +1,48 @@
+<!-- declaring the document type -->
+<!DOCTYPE html>
+<!-- Language for the document -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div class="todos">
+  <header class="text-center" style="padding-bottom: 20px">
+    <h1>Todo List with Timer</h1>
+  </header>
+  <form>
+    <div class="row">
+      <div class="col-6">
+        <input type="text" class="form-control" placeholder="Enter the task to Add" name="item" [(ngModel)]="item">
+      </div>
+      <!-- </div> -->
+      <div class="col-6">
+        <input type="datetime-local" class="form-control" id="tasktime" [(ngModel)]="time" name="time">
+      </div>
+    </div>
+    <div class="row text-center mt-20">
+      <div class="col">
+        <button type="button" class="btn btn-success" (click)="subNewItem()">Add Task</button>
+      </div>
+    </div>
+  </form>
+  <div class="todo-list mt-20">
+    <ul class="todo-list list-card">
+      <li class="list-item-card pat-10" *ngFor="let item of items;let i=index" [class.completed]="item.completed">
+        <div class="view">
+          <input class="toggle mar-10" type="hidden" (click)="completeItem(i)" [checked]="item.completed">
+          <label class="mar-10">{{item.name}}</label>
+          <span *ngIf="countDownTimes[i]">
+                    <button class="btn btn-primary mar-10">{{countDownTimes[i]?.days + 'd'}}
+                      {{countDownTimes[i]?.hours + 'h'}}
+                      {{countDownTimes[i]?.minutes + 'm'}}
+                      {{countDownTimes[i]?.seconds + 's'}}</button>
+                </span>
+          <button class="btn btn-danger delete mar-10" (click)="deleteItem(i)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
