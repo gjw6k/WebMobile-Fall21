@@ -8,6 +8,7 @@
     <mapping directory="$PROJECT_DIR$/Fall21-Web/ICP6-gjw6k" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Fall21-Web/ICP6/MashUp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Fall21-Web/ICP6/Source/MashUp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall21-Web/ICP6/Source/RVsearch" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Fall21-Web/angular-6" vcs="Git" />
   </component>
 </project>
